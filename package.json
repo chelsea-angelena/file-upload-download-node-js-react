@@ -1,0 +1,36 @@
+{
+  "name": "shopify-image-repository",
+  "version": "1.0.0",
+  "description": "upload/download from files or search images on the web",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelsea-angelena/image-repo.git"
+  },
+  "keywords": [
+    "file",
+    "upload",
+    "download",
+    "images",
+    "image",
+    "search"
+  ],
+  "author": "Chelsea Angelena Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chelsea-angelena/image-repo/issues"
+  },
+  "homepage": "https://github.com/chelsea-angelena/image-repo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.11.10",
+    "multer": "^1.4.2"
+  }
+}
