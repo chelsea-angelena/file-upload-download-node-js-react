@@ -27,10 +27,7 @@ app.use(logger('combined'));
 // app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(express.static(path.join(__dirname, 'client/public')));
 
-require('./routes/api/movies/movieRoutes')(app);
-require('./routes/api/movies/apiRoutes')(app);
-require('./routes/api/movies/userRoutes')(app);
-require('./routes/api/movies/imageRoute')(app);
+require('./routes/imageRoute')(app);
 
 // app.get('*', (req, res) => {
 // 	res.sendFile(path.join(__dirname + '/client/build/index.html'));
@@ -45,7 +42,7 @@ const date = `${today.getFullYear()}-${today.getMonth()}-${today.getDate()}`;
 const time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 const dateTime = `${date} ${time}`;
 
-const port = process.env.PORT || process.argv[2] || 8080;
+const port = process.env.PORT || process.argv[2] || 8090;
 app.listen(port, () => {
 	console.log(`Listening on ${port} @ ${dateTime}`);
 });
